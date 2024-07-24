@@ -1,0 +1,7 @@
+C:\Users\aditi.jaiswal\source\repos\BlazorApp2\BlazorApp2\obj\Release\net8.0\PubTmp\Out\BlazorApp2.exe
+C:\Users\aditi.jaiswal\source\repos\BlazorApp2\BlazorApp2\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\aditi.jaiswal\source\repos\BlazorApp2\BlazorApp2\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\aditi.jaiswal\source\repos\BlazorApp2\BlazorApp2\obj\Release\net8.0\PubTmp\Out\BlazorApp2.dll
+C:\Users\aditi.jaiswal\source\repos\BlazorApp2\BlazorApp2\obj\Release\net8.0\PubTmp\Out\BlazorApp2.deps.json
+C:\Users\aditi.jaiswal\source\repos\BlazorApp2\BlazorApp2\obj\Release\net8.0\PubTmp\Out\BlazorApp2.runtimeconfig.json
+C:\Users\aditi.jaiswal\source\repos\BlazorApp2\BlazorApp2\obj\Release\net8.0\PubTmp\Out\BlazorApp2.pdb

@@ -1,0 +1,59 @@
+﻿@page "/camera"
+@inject IJSRuntime JSR
+<script>
+    <script src="camera.js" >
+</script>
+
+<button @onclick="StartFrontCamera">Front-facing camera</button>
+<button @onclick="StartBackCamera">Rear camera</button>
+<button @onclick="save">save</button>
+
+
+<video id="video" width="600" height="400" autoplay></video>
+
+@code {
+    private string frameUri;
+
+    private bool nestedVisible;
+    private bool isVideoStarted = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            await JSR.InvokeVoidAsync("startVideo", "videoFeed");
+            isVideoStarted = true;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Camera access is denied.Please allow access to the camera.");
+
+        }
+
+
+    }
+
+
+
+
+    private async Task StartFrontCamera()
+    {
+        Console.Write("issue");
+
+        await JSR.InvokeVoidAsync("startFrontCamera");
+
+    }
+
+    private async Task StartBackCamera()
+    {
+        await JSR.InvokeVoidAsync("startBackCamera");
+    }
+    private async Task save()
+    {
+        if (!isVideoStarted)
+        {
+            Console.WriteLine("Camera access is denied. Please allow access to the camera.");
+            return;
+        }
+    }
+}
